@@ -1,0 +1,127 @@
+
+<form>
+    <fieldset>
+        <legend>Dados pessoais do usuário</legend>
+        <label for="nome">Nome:</label> <br>
+        <input id="nome" type="text" placeholder="Digite seu Nome" required>
+
+        <br>
+        <br>
+
+        <label for="email">Email:</label> <br>
+        <input id="email" type="email" placeholder="Digite seu email">
+
+        <br>
+        <br>
+
+        <label type="senha">Password:</label> <br>
+        <input type="password" placeholder="Digite sua senha" minlength="8" required> 
+
+        <br>
+        <br>
+
+        <label for="idade">Qual sua idade?</label> <br>
+        <input id="idade" type="number" min="18" max="59" placeholder="idade">
+
+        <br>
+        <br>
+
+        
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>Informações adicionais</legend>
+
+        <label for="data_de_nascimento">Data de Nascimento</label> <br>
+        <input type="date">
+
+    
+        <br>
+        <br>
+
+        <label for="hora">Preferência de hora da aula </label> <br>
+        <input type="time" id="hora">
+
+        <br>
+        <br>
+
+        <label for="cor">Escolha sua cor </label> <br>
+        <input id="cor" type="color">
+
+        <br>
+        <br>
+
+        <label for="foto">Envie foto 3x4 </label> <br>
+        <input id="foto" type="file">
+
+
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>Dados do endereço</legend>
+
+        <p> Qual unidade fica melhor para você?</p>
+
+        <label for="messejana">Messejana</label>
+        <input name="Bairro" id="messejana" type="radio">
+
+        <label for="Fatima">Fatima</label>
+        <input name="Bairro" id="Fatima" type="radio">
+
+        <label for="Aldeota">Aldeota</label>
+        <input name="Bairro" id="Aldeota" type="radio">
+        
+        <label for="Castelão">Castelão</label>
+        <input name="Bairro" id="Castelão" type="radio">
+
+        <br>
+        <hr>
+
+        <p>Quais cursos você tem interesse?</p>
+
+        <label for="php">Php 8</label>
+        <input id="php" type="checkbox">
+
+        <br>
+
+        <label for="Kotlin">Kotlin</label>
+        <input id="Kotlin" type="checkbox">
+
+        <br>
+
+        <label for="Java">Java</label>
+        <input id="Java" type="checkbox">
+
+        <br>
+        <hr>
+
+        <input type="month">
+        <br>
+        <br>
+
+        <label for="cidade">Cidade</label>
+        <select id="cidade">
+            <option value="#" selected disabled>-- Selecione --</option>
+            <option value="#">Fortaleza</option>
+            <option value="#">São Paulo</option>
+            <option value="#">Rio de Janeiro</option>
+            <option value="#">Brasilia</option>
+            <option value="#">Natal</option>
+            <option value="#">Rio grande do Sul</option>
+            <option value="#">Belem</option>
+            <option value="#">Porto velho</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label for="obs">Observações</label> <br>
+        <textarea name="obs" id="obs" cols="40" rows="5" placeholder="Digite aqui"></textarea>
+
+    </fieldset>
+
+    <br>
+    <button>Enviar</button>
+</form>
