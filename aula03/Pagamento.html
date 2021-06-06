@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="./pagamento.css">
+
+<div class="formulario">
+    <form action="">
+
+            <h1>Pagamento</h1>
+            <hr>
+
+            <br><br>
+        
+            <label for="nome">Nome do titular:</label>
+            <input type="text" min="1" placeholder="Digite o nome do titular" /> <br> <br>
+        
+            <label for="cpf">CPF do titular:</label>
+            <input type="text" min="1" placeholder="Digite o numero do cpf" />
+        
+            <br> <br>
+        
+            <label for="ncartao">Numero do Cartão:</label>
+            <input type="text" id="numero" pattern=" [0-9] {4} [0-9] {4} [0-9] {4} [0-9] {4}" minlength="16" maxlength="16" placeholder="xxxx xxxx xxxx xxxx" required/>
+        
+            <br>
+            <br>
+        
+            <label for="data_de_validade">Data de Validade</label>
+            <input type="date">
+        
+            <br>
+            <br>
+        
+            <label for="codigo">Codigo de segurança:</label>
+            <input type="number" minlength="1" maxlength="3" pattern="[0-9] {3}"  placeholder="xxx" required/>
+        
+        <br>
+        <br>
+        <button>Confirmar Pagamento</button>
+    </form>
+</div>
+
+

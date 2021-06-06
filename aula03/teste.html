@@ -1,0 +1,108 @@
+<link rel="stylesheet" href="./style.css">
+
+<form action="">
+    <fieldset>
+        <legend>Tabela de Produtos</legend>
+
+
+        <label for="nome">Marca:</label> <br>
+        <input id="nome" type="text" placeholder="Nome do produto" required>
+
+        <label for="modelo">Modelo</label>
+        <input id="modelo" type="text" placeholder="Modelo Ex: MMM 1111" required>
+
+        <br>
+        <hr>
+
+        <label for="preco">Preço:</label> <br>
+        <input type="number" min="1"  placeholder="Digite o preço R$" />
+
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" inputmode="numeric" min="1"  placeholder="Digite a qtd" />
+
+        <br>
+        <hr>
+
+
+        <label for="obs">Descrição do produto</label> <br>
+        <textarea name="obs" id="obs" cols="40" rows="5" placeholder="Digite aqui a descrição do produto"></textarea>
+
+        <br>
+        <br>
+
+        <label for="serie">Numero de Serie:</label> <br>
+        <input type="number" min="1"  placeholder="Digite o numero de serie" />
+        <br>
+        <hr>
+    
+        <p>Disponibilidade:</p>
+
+        <label for="sim">Sim</label>
+        <input name="stock" id="positivo_stock" type="radio">
+    
+        <label for="nao">Não</label>
+        <input name="stock" id="negativo_stock" type="radio">
+
+        <br>
+        <br>
+
+        <label for="cidade">Garantia:</label>
+        <select id="cidade">
+            <option value="#" selected disabled>-- Selecione --</option>
+            <option value="#">1 Ano</option>
+            <option value="#">3 Anos</option>
+            <option value="#">5 Anos</option>
+            <option value="#">7 Anos</option>
+        </select>
+        
+        
+        <br>
+        <hr>
+        <br>
+        <fieldset>
+            <legend>Envie foto</legend>
+        <input id="foto" type="file">
+
+        </fieldset>
+        <br>
+        <br>
+
+        
+    </fieldset>
+    <br>
+    <br>
+
+    <fieldset>
+        <legend>Pagamento - Cartão de crédito</legend>
+
+        <label for="nome">Nome do titular:</label> <br>
+        <input type="text" min="1" placeholder="Digite o nome do titular" />
+
+        <label for="cpf">CPF do titular:</label>
+        <input type="text" min="1" placeholder="Digite o numero do cpf" />
+
+        <br>
+        <br>
+
+        <label for="ncartao">Numero do Cartão:</label> <br>
+        <input type="text" pattern="[0-9] {16}" minlength="16" maxlength="16" placeholder="xxxx xxxx xxxx xxxx" required/>
+
+        <br>
+        <br>
+
+        <label for="data_de_validade">Data de Validade</label> <br>
+        <input type="date">
+
+        <br>
+        <br>
+
+        <label for="codigo">Codigo de segurança:</label>
+        <input type="number" minlength="1" maxlength="3" pattern="[0-9] {3}"  placeholder="xxx" required/>
+
+
+    </fieldset>
+
+    <br>
+    <button>Salvar</button>
+
+</form>
