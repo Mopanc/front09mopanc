@@ -6,3 +6,12 @@ article i {
     font-size: 4rem !important;
     margin-bottom: 10px;
 }
+
+.galeria .card {
+    transition: 0.5s;
+}
+
+.galeria .card:hover {
+    transform: scale(0.9);
+    transition: 0.5s;
+}
