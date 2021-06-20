@@ -1,0 +1,8 @@
+body {
+    background-color: #efefef;
+}
+
+article i {
+    font-size: 4rem !important;
+    margin-bottom: 10px;
+}
