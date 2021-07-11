@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+
+    <table width="40%" margin-left="30%" class="table">
+        <thead>
+            <tr>
+                <th id="visor" class >0</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td onclick="digitarNumero(1)" class="btn btn-outline-dark">1</td>
+                <td onclick="digitarNumero(2)" class="btn btn-outline-dark">2</td>
+                <td onclick="digitarNumero(3)" class="btn btn-outline-dark">3</td>
+                <td onclick="somar()" class="btn btn-outline-dark">+</td>
+            </tr>
+            <tr>
+                <td onclick="digitarNumero(4)" class="btn btn-outline-dark">4</td>
+                <td onclick="digitarNumero(5)" class="btn btn-outline-dark">5</td>
+                <td onclick="digitarNumero(6)" class="btn btn-outline-dark">6</td> 
+                <td class="btn btn-outline-dark">-</td> 
+            </tr>
+            <tr>
+                <td onclick="digitarNumero(7)" class="btn btn-outline-dark">7</td>
+                <td onclick="digitarNumero(8)" class="btn btn-outline-dark">8</td>
+                <td onclick="digitarNumero(9)" class="btn btn-outline-dark">9</td>
+                <td class="btn btn-outline-dark">X</td>
+            </tr>
+            <tr>
+                <td  class="btn btn-outline-dark">=</td>
+                
+                <td onclick="digitarNumero(0)" class="btn btn-outline-dark">0</td>
+                <td onclick="limpar()" class="btn btn-outline-dark">C</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+<script src="./events.js"></script>
+    
+</body>
+</html>
+
+
