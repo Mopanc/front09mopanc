@@ -52,3 +52,43 @@
 </html>
 
 
+<!-- fazer uma query na bd -->
+
+$query_rsProdutos = "SELECT nome, imagem2, url FROM l_pecas".$extensao; <!--a query chama os produtos com o nome, imagem, url da tabela lpecas(".$extensao" serve para poder alterar a extensão lingua no caso ) -->
+$rsProdutos = DB::getInstance()->prepare($query_rsProdutos); <!-- aqui prepara os dados  -->
+$rsProdutos->execute();  <!-- aqui executa a chamada -->
+$row_rsProdutos = $rsProdutos->fetchAll(PDO::FETCH_ASSOC);  <!-- aqui faz o fetch de tudo no caso  -->
+$totalRows_rsProdutos = $rsProdutos->rowCount();  <!-- aqui faz a contagem do total de linhas  -->
+DB::close();  <!-- aqui fecha a bd no final da query -->
+
+
+
+
+
+<!-- no foreach colocamos os dados nos campos para serem chamados automaticamente -->
+
+	<section class="row mt5 align-items-center" id="produtos">
+		<?php ($row_rsProdutos); 
+
+		?>
+		<?php /* 
+			<picture class="div_100 has_bg fixed" style="<?php echo $style; ?>">
+			<?php echo getFill('homepage'); ?>
+			</picture>
+		*/ ?>
+
+		<div class="servicos col-lg-6">
+			<img width="580px" height="580px" src="../../imgs/teste/produtos.jpg" alt="imagem de serviços">
+		</div>
+		<div class="servicos col-lg-6 blog_divs type_home">
+			<article class="blog_divs type_home">
+				<h4 class="title_servicos textos text-left">serviços</h4>
+				<?php foreach($row_rsProdutos as $produto) { ?>
+					<h3><a class="name_logo" href="<?php echo $produto['url']; ?>"><?php echo $produto['nome']; ?></a></h3>
+				<?php } ?>
+			</article>
+		</div>
+
+	</section>
+
+
